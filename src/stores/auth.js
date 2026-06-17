@@ -11,14 +11,14 @@ export const useAuthStore = defineStore('auth', {
   },
   actions: {
     async login(email, password) {
-      const response = await axiosInstance.post('/admin/login', { email, password })
+      const response = await axiosInstance.post('/auth/login', { email, password })
       this.token = response.data.token
       this.user = response.data.user
       localStorage.setItem('token', this.token)
     },
     async logout() {
       try {
-        await axiosInstance.post('/admin/logout')
+        await axiosInstance.post('/auth/logout')
       } catch (error) {
         console.error(error)
       } finally {
@@ -30,8 +30,8 @@ export const useAuthStore = defineStore('auth', {
     async fetchUser() {
       if (!this.token) return
       try {
-        const response = await axiosInstance.get('/admin/me')
-        this.user = response.data
+        const response = await axiosInstance.get('/auth/me')
+        this.user = response.data.user
       } catch (error) {
         this.token = null
         this.user = null

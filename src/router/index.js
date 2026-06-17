@@ -11,8 +11,37 @@ const routes = [
         path: '',
         name: 'Dashboard',
         component: () => import('../views/Dashboard.vue')
+      },
+      {
+        path: 'sekolah',
+        name: 'Sekolah',
+        component: () => import('../views/Sekolah.vue')
+      },
+      {
+        path: 'ewallet',
+        name: 'EWallet',
+        component: () => import('../views/EWallet.vue')
+      },
+      {
+        path: 'master/kurikulum',
+        name: 'Kurikulum',
+        component: () => import('../views/master/Kurikulum.vue')
+      },
+      {
+        path: 'master/materi',
+        name: 'Materi',
+        component: () => import('../views/master/Materi.vue')
+      },
+      {
+        path: 'master/soal',
+        name: 'Soal',
+        component: () => import('../views/master/Soal.vue')
+      },
+      {
+        path: 'pengaturan',
+        name: 'Pengaturan',
+        component: () => import('../views/Pengaturan.vue')
       }
-      // other authenticated routes will go here
     ]
   },
   {
@@ -20,6 +49,10 @@ const routes = [
     name: 'Login',
     component: () => import('../views/Login.vue'),
     meta: { guestOnly: true }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
