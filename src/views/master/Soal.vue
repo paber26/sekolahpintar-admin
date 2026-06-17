@@ -8,7 +8,7 @@
     <el-card class="shadow-sm border-none shadow-[0_2px_10px_rgba(0,0,0,0.02)] rounded-xl">
       <el-table v-loading="loading" :data="soalList" style="width: 100%" stripe>
         <el-table-column prop="id" label="ID" width="80" />
-        <el-table-column prop="materi.judul" label="Materi" min-width="200" show-overflow-tooltip />
+        <el-table-column prop="konten.judul" label="Konten Kuis" min-width="200" show-overflow-tooltip />
         <el-table-column prop="pertanyaan" label="Pertanyaan" min-width="300" show-overflow-tooltip>
           <template #default="{ row }">
             <span v-html="row.pertanyaan.substring(0, 50) + (row.pertanyaan.length > 50 ? '...' : '')"></span>

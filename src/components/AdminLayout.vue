@@ -52,11 +52,13 @@
           
           <el-sub-menu index="master">
             <template #title>
-              <el-icon><Collection /></el-icon>
-              <span class="font-medium">Master Data</span>
+              <el-icon><Notebook /></el-icon>
+              <span>Master Data</span>
             </template>
             <el-menu-item index="/master/kurikulum">Kurikulum</el-menu-item>
-            <el-menu-item index="/master/materi">Bank Materi</el-menu-item>
+            <el-menu-item index="/master/mata-pelajaran">Mata Pelajaran</el-menu-item>
+            <el-menu-item index="/master/bab">Bab & Topik</el-menu-item>
+            <el-menu-item index="/master/konten">Konten Belajar</el-menu-item>
             <el-menu-item index="/master/soal">Bank Soal</el-menu-item>
           </el-sub-menu>
 

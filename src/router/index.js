@@ -28,9 +28,19 @@ const routes = [
         component: () => import('../views/master/Kurikulum.vue')
       },
       {
-        path: 'master/materi',
-        name: 'Materi',
-        component: () => import('../views/master/Materi.vue')
+        path: 'master/mata-pelajaran',
+        name: 'MataPelajaran',
+        component: () => import('../views/master/MataPelajaran.vue')
+      },
+      {
+        path: 'master/bab',
+        name: 'Bab',
+        component: () => import('../views/master/Bab.vue')
+      },
+      {
+        path: 'master/konten',
+        name: 'Konten',
+        component: () => import('../views/master/Konten.vue')
       },
       {
         path: 'master/soal',
