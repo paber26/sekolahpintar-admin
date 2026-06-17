@@ -55,6 +55,7 @@
               <el-icon><Notebook /></el-icon>
               <span>Master Data</span>
             </template>
+            <el-menu-item index="/master/preview-lms">Preview Kurikulum</el-menu-item>
             <el-menu-item index="/master/mata-pelajaran">Mata Pelajaran</el-menu-item>
             <el-menu-item index="/master/bab">Bab & Topik</el-menu-item>
             <el-menu-item index="/master/konten">Konten Belajar</el-menu-item>

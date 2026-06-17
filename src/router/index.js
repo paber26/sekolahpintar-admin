@@ -23,6 +23,11 @@ const routes = [
         component: () => import('../views/EWallet.vue')
       },
       {
+        path: 'master/preview-lms',
+        name: 'PreviewLMS',
+        component: () => import('../views/master/PreviewLMS.vue')
+      },
+      {
         path: 'master/mata-pelajaran',
         name: 'MataPelajaran',
         component: () => import('../views/master/MataPelajaran.vue')
