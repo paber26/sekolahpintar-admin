@@ -23,11 +23,6 @@ const routes = [
         component: () => import('../views/EWallet.vue')
       },
       {
-        path: 'master/kurikulum',
-        name: 'Kurikulum',
-        component: () => import('../views/master/Kurikulum.vue')
-      },
-      {
         path: 'master/mata-pelajaran',
         name: 'MataPelajaran',
         component: () => import('../views/master/MataPelajaran.vue')

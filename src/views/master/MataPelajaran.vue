@@ -9,8 +9,6 @@
       <el-table v-loading="loading" :data="mataPelajaranList" style="width: 100%" stripe>
         <el-table-column prop="id" label="ID" width="80" />
         <el-table-column prop="nama" label="Mata Pelajaran" min-width="200" />
-        <el-table-column prop="kurikulum.nama" label="Kurikulum" min-width="200" />
-        <el-table-column prop="tingkat" label="Tingkat" width="120" />
         <el-table-column prop="is_active" label="Status" width="120">
           <template #default="{ row }">
             <el-tag :type="row.is_active ? 'success' : 'danger'" size="small">
